@@ -36,6 +36,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #ecf0f1;
+  background-color: rgb(246, 247, 248);
 }
 </style>

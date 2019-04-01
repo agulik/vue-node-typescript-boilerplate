@@ -19,7 +19,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .home {
-  background-color: #ecf0f1;
+  background-color: rgb(246, 247, 248);
 }
 
 .home .cards-wrapper {

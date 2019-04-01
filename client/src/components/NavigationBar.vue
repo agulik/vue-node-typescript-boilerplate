@@ -20,7 +20,8 @@ export default {
   align-items: center;
   height: 64px;
   width: 100%;
-  background-color: #ecf0f1;
+  background-color: rgb(246, 247, 248);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px 0px;
 }
 .navigation p {
   margin: 0;
