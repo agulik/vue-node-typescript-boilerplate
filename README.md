@@ -1,4 +1,4 @@
-This is a monolithic boilerplate for a full-stack application in Vue and NodeJS.
+This is a monolithic boilerplate for an application in Vue and NodeJS.
 
 # How to run the project
 
