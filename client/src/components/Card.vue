@@ -16,7 +16,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .card {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   height: 400px;
   width: 300px;

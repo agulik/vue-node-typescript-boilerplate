@@ -2,6 +2,7 @@
   <div class="home">
     <div class="cards-wrapper">
       <Card title="Vegan Mac & Cheese"/>
+      <Card title="Spaghetti Carbonara"/>
     </div>
   </div>
 </template>
@@ -19,6 +20,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .home {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   background-color: rgb(246, 247, 248);
 }
 
