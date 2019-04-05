@@ -22,6 +22,7 @@ export default {
   width: 100%;
   background-color: rgb(246, 247, 248);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px 0px;
+  border-top: 2px solid #6d48e5;
 }
 .navigation p {
   margin: 0;

@@ -36,7 +36,7 @@ const initializeDb = async () => {
   )
   await db.query(
     "INSERT INTO recipes(id, Title, ImageSource, Link) VALUES($1, $2, $3, $4)",
-    [1, "Sweet Potato Surprise", "https://cdn.loveandlemons.com/wp-content/uploads/2012/11/3.jpg", "https://www.loveandlemons.com/sweet-potato-surprise/"]
+    [1, "Sweet Potato Surprise", "https://cdn.loveandlemons.com/wp-content/uploads/2012/11/3.jpg", "https://www.loveandlemons.com/sweet-potato-surprise/"],
   )
 }
 
