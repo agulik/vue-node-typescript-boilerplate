@@ -8,11 +8,17 @@
 </template>
 
 <script lang="ts">
+import API from "../api"
 import Card from "./Card.vue"
+
 export default {
   name: "Home",
   components: {
     Card
+  },
+  async created() {
+    const response = await API.get(`${process.env.VUE_APP_SERVER_URI}/recipes/all`)
+    console.log({response})
   }
 }
 </script>
