@@ -1,4 +1,4 @@
-import * as axios from './main'
+import axios from "axios"
 
 export default axios.create({
     baseURL: `${process.env.VUE_APP_SERVER_URI}`,

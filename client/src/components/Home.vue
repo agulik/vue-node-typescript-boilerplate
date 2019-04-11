@@ -3,12 +3,13 @@
     <div class="cards-wrapper">
       <Card title="Vegan Mac & Cheese"/>
       <Card title="Spaghetti Carbonara"/>
+      <p>yum!!!!!</p>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import API from "../api"
+import axios from "axios"
 import Card from "./Card.vue"
 
 export default {
@@ -17,7 +18,8 @@ export default {
     Card
   },
   async created() {
-    const response = await API.get(`${process.env.VUE_APP_SERVER_URI}/recipes/all`)
+    const response = await axios.get(`${process.env.VUE_APP_SERVER_URI}/recipes/all`)
+    /* tslint:disable */
     console.log({response})
   }
 }
