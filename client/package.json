@@ -20,6 +20,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "prettier": "^1.16.4",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
@@ -40,6 +41,10 @@
     "plugins": {
       "autoprefixer": {}
     }
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100
   },
   "browserslist": [
     "> 1%",

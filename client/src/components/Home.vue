@@ -1,11 +1,11 @@
 <template>
   <div class="home">
     <div class="cards-wrapper">
-      <Card title="Vegan Mac & Cheese"/>
-      <Card title="Spaghetti Carbonara"/>
-      <p>yum!!!!!</p>
-    </div>
+        <Card v-for="(recipe, index) in recipes" :key="index" :title="recipe.title" :imageSrc="recipe.imagesource" :link="recipe.link" />
+    <Card title="Vegan Mac & Cheese" />
+    <Card title="Spaghetti Carbonara"/>
   </div>
+    </div>
 </template>
 
 <script lang="ts">
@@ -17,10 +17,15 @@ export default {
   components: {
     Card
   },
+  data() {
+    return {
+      recipes: []
+    }
+  },
   async created() {
     const response = await axios.get(`${process.env.VUE_APP_SERVER_URI}/recipes/all`)
-    /* tslint:disable */
     console.log({response})
+    this.recipes = response.data
   }
 }
 </script>
