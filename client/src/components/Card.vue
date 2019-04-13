@@ -58,7 +58,7 @@ export default {
   margin: 20px 0;
 }
 .card a:visited {color: #2c3e50;} 
-.card a:hover {color: #2c3e50;}  
+.card a:hover {color: #2c3e50; text-decoration: underline;}  
 .card a:active {color:#2c3e50;} 
 
 </style>
